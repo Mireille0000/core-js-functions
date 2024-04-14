@@ -109,7 +109,7 @@ function getPolynom() {
  */
 function memoize(func) {
   const key = func();
-  return function () {
+  return () => {
     return Math.ceil(key);
   };
 }
